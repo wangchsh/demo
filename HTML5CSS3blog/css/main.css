@@ -20,6 +20,10 @@ header {
     height: 900px;
 }
 
+.article #banner {
+    height: 300px;
+}
+
 nav ul {
     list-style: none;
     margin: 0;
@@ -54,13 +58,17 @@ nav ul li.logo {
     top: 160px;
 }
 
+.article #banner .inner {
+    top: 30px;
+}
+
 #banner .inner h1 {
     margin: 0;
 }
 
 button {
     border: none;
-    background: #333;
+    background: #666666;
     color: #eee;
 }
 
@@ -94,6 +102,10 @@ h1 {
     border-bottom: 2px solid #fff;
 }
 
+.article h1 {
+    border: none;
+}
+
 h2 {
     font-size: 30px;
     margin: 0;
@@ -116,13 +128,13 @@ p {
 
 .green-section {
     text-align: center;
-    background: #089DB0;
+    background: #6699CC;
     color: #fff;
     padding: 100px 0;
 }
 
 .green-section .hr {
-    background: #078494;
+    background: #FFFFFF;
     width: 60%;
 }
 
@@ -130,7 +142,7 @@ p {
     display: inline-block;
     width: 80px;
     height: 80px;
-    background: #0D6f7c;
+    background: #CCCCCC;
     transform: rotate(45deg);
     margin: 30px;
 }
@@ -145,7 +157,7 @@ p {
 }
 
 .gray-section {
-    background: #252f34;
+    background: #666699;
     color: #fff;
 }
 
@@ -185,7 +197,7 @@ p {
 }
 
 .article-preview:nth-child(odd) {
-    background-color: rgba(255, 255, 255, 0.05)
+    background-color: rgba(255, 255, 255, 0.03)
 }
 
 .article-preview>div {
@@ -200,7 +212,7 @@ p {
 
 .purple-section {
     padding: 100px;
-    background: #3f3965;
+    background: #FF9999;
     color: #fff;
 }
 
@@ -276,4 +288,73 @@ ul.share-group {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    overflow: hidden;
+}
+
+.mask {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.43);
+    display: none;
+}
+
+#sidebar {
+    width: 300px;
+    background: #333;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding: 20px 0;
+    right: -300px;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#sidebar ul a {
+    text-decoration: none;
+    text-align: center;
+    padding: 20px 0px;
+    display: inline-block;
+    color: #fff;
+    width: 100%
+}
+
+#sidebar ul a:hover {
+    background: #444;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+
+/*文章页*/
+
+.content_wrapper {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.article .content {
+    background: #fefefe;
+}
+
+article {
+    line-height: 2;
+    padding: 30px 0;
+}
+
+.article_info {
+    font-size: 13px;
+    padding: 20px 0;
+    color: #888;
 }
